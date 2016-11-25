@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.homeautogroup.updateservice.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#fff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This App Checks For Updates in oncreate from your server and shows an alert dialog when the update is available"
+        android:textColor="#000"
+        android:textAllCaps="true"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="homeautogroup.co.ke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="136dp"
+        android:layout_marginEnd="136dp"
+        android:id="@+id/textView"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorLink="?android:attr/colorActivatedHighlight"
+        android:textStyle="bold" />
+
+    <TextView
+        android:text="Place the update url in your server. the update app should be signed with the same key or the installation will fail"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="134dp"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:text="Version 1"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_width="wrap_content"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+
+        android:layout_marginTop="128dp"
+        android:id="@+id/textView5" />
+
+</RelativeLayout>
